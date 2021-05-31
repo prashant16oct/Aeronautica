@@ -1,0 +1,1 @@
+gsap.to("#logo-anime", {rotationY:360, duration:3, repeat:-1, repeatDelay:5})
