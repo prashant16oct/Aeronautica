@@ -103,4 +103,44 @@ text-decoration: none;
  footer h4{
      color:deepskyblue;
  }
-/*------------------------------------------------------*/
+/*---------------------animation boxes---------------------------------*/
+
+    /* For mobile phones: */
+    [class*="div-box"] {
+        display:inline-block;
+        margin:3vw 3vw ;
+        border-radius:5px; 
+        height:20px; 
+        width:20px;
+}
+[class*="left"] {
+margin-left:10%;
+}
+[class*="right"] {
+margin-right:10%;
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .div-box{
+        display:inline-block;
+        margin:20px 40px ;
+        border-radius:5px; 
+        height:30px; 
+        width:30px;
+    }
+    .left{
+        margin-left:22%;
+    }
+    .right{
+        margin-right:22%;
+    }
+}
+
+    /* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 600px) {
+  .div-hide {
+    display: none;
+  }
+}
