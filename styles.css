@@ -144,3 +144,27 @@ margin-right:10%;
     display: none;
   }
 }
+/* ---------------------------------carousel----------------------------- */
+   /* If the screen size is 600px wide or less, hide the element */
+   @media only screen and (max-width: 600px) {
+    .caro-size {
+        max-width:100%;
+        width:100%;
+        max-height:50vh;
+        height:50vh;
+    }
+  }
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+.caro-size{
+    border-radius:30px;
+    max-width:90%;
+    width:90%;
+    max-height:70vh;
+    height:70vh;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom:3%;
+        }
+}
+
