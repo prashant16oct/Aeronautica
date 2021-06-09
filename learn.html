@@ -3,97 +3,123 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="aeronautica_logo.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Monda&family=Montserrat&display=swap" rel="stylesheet">
-  <!--Fontawesome-->
-  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> 
- 
-  <link rel="stylesheet" href="learn_style.css">
-  <link rel="stylesheet" href="styles.css">
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="aeronautica_logo.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monda&family=Montserrat&display=swap" rel="stylesheet">
+    <!--Fontawesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   <title>Learn More</title>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+  <div id="loader">
+    <div class='body'>
+  <span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+  <div class='base'>
+    <span></span>
+    <div class='face'></div>
+  </div>
+  </div>
+  <div class='longfazers'>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  </div>
+  <h1 class="pa">Loading...</h1>
+  </div>
+
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
   <!--============================navbar=========================-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
-    <div class="container-fluid">
-    <a class="navbar-brand" href="index.html" >
-        <img src="img/aeronautica_logo.png" style="height: 50px; width: 50px;" id="logo-anime">  
-    <span class="logo-text">AERONAUTICA</span></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="height:70px">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" >
+          <img src="img/aeronautica_logo.png" style="height: 50px; width: 50px;" id="logo-anime">
+      <span class="logo-text">AERONAUTICA</span></a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:50%" >
-          <li class="nav-item">
-            <a class="nav-link blue" style="color:aliceblue;" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link blue" style="color:aliceblue" href="learn.html">Learn More</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link blue" style="color:aliceblue" href="#">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link blue" style="color:aliceblue" href="#">About Us</a>
-          </li>         
-        </ul>
-        <form class="d-flex"  >
-            <input class="form-control me-2" style="width: 200px;" type="search" placeholder="Search " 
-            aria-label="Search">
-            <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
-        </form>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left:50%" >
+            <li class="nav-item">
+              <a class="nav-link blue" style="color:aliceblue;" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link blue" style="color:aliceblue" href="learn.html">Learn More</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link blue" style="color:aliceblue" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link blue" style="color:aliceblue" href="demo.html">About Us</a>
+            </li>
+          </ul>
+          <form class="d-flex"  >
+              <input class="form-control me-2" style="width: 200px;" type="search" placeholder="Search "
+              aria-label="Search">
+              <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>
-  <!---------------------------------->
+    </nav>
+<!---------------------------------->
   <br>
   <h1 class="heading"><span class="heading1">Aeronautica</span> <span class="heading2">IPEC</span></h1>
   <br>
   <br>
-  
+  <br>
   <p class="p1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     Duis aute
     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
   <br>
   <br>
+  <div class="container">
   <h2 class="heading3">Our Aim</h2>
-  <img src="img/mission.png" alt="" class="aims">
+  <img src="img/aim.png" alt="AIM" class="aim img-fluid">
   <br>
   <p class="p2">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
     voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
     numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
     reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+  </div>
   <br>
   <br>
   <br>
   <br>
+  <div class="container">
   <h2 class="heading3">Our Motto</h2>
-  <img src="img/motto.png" alt="" class="aims">
+  <img src="img/motto.png" alt="MOTTO" class="aim">
   <br>
   <p class="p2">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
     voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
     numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
     reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+</div>
   <br>
   <br>
   <br>
+  <div class="container">
   <h2 class="heading3">Our Vision</h2>
-  <img src="img/vision.png" alt="" class="aims">
+  <img src="img/vision.png" alt="VISION" class="aim">
   <br>
   <p class="p2">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
     voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
     numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
     reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+      </div>
   <br>
   <br>
   <br>
@@ -101,7 +127,7 @@
   <section id="features">
     <div class="row">
       <div class="feature-box1 col-lg-4">
-        <a href="https://www.instagram.com/aeronautica_ipec/"><button type="button" class="btn btn1 btn-outline-warning"><i class="fab fa-instagram fa-2x rotate1"></i>  </button></a>
+        <a href="https://www.instagram.com/aeronautica_ipec/"><button type="button" class="btn btn1 btn-outline-warning"><i class="fab fa-instagram fa-2x rotate1"></i> </button></a>
         <h4 class="heading4">Instagram</h4>
       </div>
       <div class="feature-box2 col-lg-4">
@@ -114,14 +140,14 @@
       </div>
     </div>
   </section>
-<!----------------------------------------------footer---------------------------------------------------->
 
-
-
-
-<!------------------------------------------------------------------------------------------------------>
+  <!------------------------------------------------------------------>
+  
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</div>
 </body>
 
 </html>

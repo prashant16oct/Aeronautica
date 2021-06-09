@@ -1,22 +1,41 @@
 body{
-    background-color: #1b2535;
+    background-color:white ; 
 }
 
-.blue:hover{
-    color:#2940d3 !important;
+/*-------image top---------*/
+.img-top{
+ background-image: url(img/vector/vector11.jpg);
+ width:100%;
+ height:40vw; 
+ background-size: cover;
+ background-repeat: no-repeat;
+ opacity: 0.8;
+ padding-top:2%;
+ 
 }
+
+/*--------------navbar---------------*/
+.blue:hover{
+    color:#2dd8f7 !important;
+}
+
+#nav-box{
+    margin:0 2% 2% ;
+    box-shadow: 10px 10px 5px grey;
+    
+    }
 
 /*========================footer===========================*/
 footer {
 	padding:20px;
-   background:rgb(14, 13, 13) !important;
+   background:#645fe4 ;                             /* #4f4ae2  !important;  */   
    color:white
 }
 
 .subscribe-sec{
     width:100%;
     height:20%;
-    background-color:#030d4e;
+    background-color: #7d79e7;                      /*#6763e2;*/
 }
 
 .icon-align{
@@ -24,7 +43,7 @@ vertical-align: -webkit-baseline-middle
 }
 .icon-f{
     margin-top:10px;
-   margin: 5px;
+   margin-left: 10px;
    margin-bottom: 0;
    color: whitesmoke;
 }
@@ -33,17 +52,14 @@ vertical-align: -webkit-baseline-middle
     color:magenta;
 }
 
-.fb-icon{
-    color:rgb(11, 74, 211);
-}
 .insta-icon:hover, .fb-icon:hover, .yt-icon:hover{
     animation: rotation2 1s 1 linear;
 }
-.insta-icon{
+.insta-icon:hover{
     color:magenta;
 }
 
-.yt-icon {
+.yt-icon:hover {
     color:rgb(226, 6, 6);
 }
 
@@ -57,7 +73,7 @@ vertical-align: -webkit-baseline-middle
     }
   }
 .sub-footer  {
-	background:#080808;
+	background:#343536;
    padding:20px 0;
    color: floralwhite;
    text-align: center;
@@ -66,10 +82,12 @@ vertical-align: -webkit-baseline-middle
 
 footer h4 {
 	margin-bottom:30px;
+    margin-left:10%;
 	text-transform:uppercase;
 	text-shadow:none;
-	font-weight:550;
-	color:#fff;
+	font-weight:650;
+    color:rgb(74, 225, 252);
+	
 }
 
 .mobile{
@@ -99,76 +117,4 @@ text-decoration: none;
 .subscribe_button {
    margin-right: 5px;
  }
-
- footer h4{
-     color:deepskyblue;
- }
-/*---------------------animation boxes---------------------------------*/
-
-    /* For mobile phones: */
-    [class*="div-box"] {
-        display:inline-block;
-        margin:3vw ;
-        border-radius:3px; 
-        height:15px; 
-        width:15px;
-}
-[class*="left"] {
-margin-left:12%;
-}
-[class*="right"] {
-margin-right:12%;
-}
-
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .div-box{
-        display:inline-block;
-        margin:20px 40px ;
-        border-radius:5px; 
-        height:30px; 
-        width:30px;
-    }
-    .left{
-        margin-left:22%;
-    }
-    .right{
-        margin-right:22%;
-    }
-}
-
-    /* If the screen size is 500px wide or less, hide the element */
-@media only screen and (max-width: 500px) {
-  .div-hide {
-    display: none;
-  }
-}
-/* ---------------------------------carousel----------------------------- */
-   /* If the screen size is 500px wide or less, hide the element */
-   @media only screen and (max-width: 500px) {
-    .caro-size {
-        max-width:100%;
-        width:100%;
-        max-height:40vh;
-        height:40vh;
-    }
-    .top-img{
-        height:50vh;
-        max-height:50vh;
-    }
-  }
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-.caro-size{
-    border-radius:30px;
-    max-width:90%;
-    width:90%;
-    max-height:70vh;
-    height:70vh;
-    margin-left:5%;
-    margin-right:5%;
-    margin-bottom:3%;
-        }
-}
 
